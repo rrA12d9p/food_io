@@ -4,4 +4,5 @@ class Fridge < ActiveRecord::Base
 	validates :location, presence: true
 	validates :brand, presence: true
 	validates :size, presence: true
+	validates :max_food_items, presence: true
 end

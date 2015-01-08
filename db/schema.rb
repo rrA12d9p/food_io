@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150108184928) do
+ActiveRecord::Schema.define(version: 20150108221723) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -38,8 +38,10 @@ ActiveRecord::Schema.define(version: 20150108184928) do
     t.string   "location"
     t.string   "brand"
     t.float    "size"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",                  null: false
+    t.datetime "updated_at",                  null: false
+    t.integer  "max_food_items", default: 10
+    t.integer  "max_drink_oz",   default: 50
   end
 
 end
